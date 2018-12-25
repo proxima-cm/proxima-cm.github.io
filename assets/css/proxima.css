@@ -1,0 +1,19 @@
+.proxima-bg { background-color: #241d50}
+
+.proxima-color-one { color: #241d50}
+
+.proxima-btn:hover {
+    color: #fff;
+    background-color: #241d50;
+    border-color: #241d50;
+}
+
+.proxima-premium-btn {
+    color: #fff;
+    background-color: #e4500e;
+    border-color: #e4500e;
+}
+
+.proxima-text-header {
+  color: #fff
+}

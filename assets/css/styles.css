@@ -1,4 +1,4 @@
-/*   
+/*
  * Template Name: DevStudio - Responsive Website Template for web design & development agencies
  * Version: 2.0
  * Author: Xiaoying Riley at 3rd Wave Media
@@ -26,7 +26,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: #47b3d7;
+  color: #fff;
 }
 a:focus {
   text-decoration: none;
@@ -77,7 +77,7 @@ a.btn-cta-secondary:hover,
   color: #fff;
 }
 .highlight {
-  color: #71c4e0;
+  color: #fff;
 }
 .form-control {
   -webkit-box-shadow: none;
@@ -214,10 +214,10 @@ select {
   position: relative;
 }
 .bg-slider-wrapper .flexslider .flex-control-nav li a {
-  background: rgba(255, 255, 255, 0.3);
+  background: #241d50;
 }
 .bg-slider-wrapper .flexslider .flex-control-nav li a.flex-active {
-  background: rgba(255, 255, 255, 0.8);
+  background: #241d50;
 }
 /* ======= Header ======= */
 body.no-header-wrapper {
@@ -271,7 +271,7 @@ body.no-header-wrapper {
   width: 100%;
   z-index: 40;
   padding: 15px inherit;
-  background: rgba(48, 56, 67, 0.9);
+  background: #241d50;
   -webkit-transition: padding 0.6s ease-in-out;
   -moz-transition: padding 0.6s ease-in-out;
   -ms-transition: padding 0.6s ease-in-out;
@@ -307,7 +307,7 @@ body.no-header-wrapper {
   text-decoration: none;
 }
 .header h1.logo a .highlight {
-  color: #71c4e0;
+  color: #fff;
 }
 .header .main-nav {
   padding: 0;
@@ -329,7 +329,7 @@ body.no-header-wrapper {
   margin-right: 15px;
 }
 .header .main-nav .nav .nav-item.active > .nav-link {
-  color: #71c4e0;
+  color: #e4500e;
   background: none;
   font-weight: bold;
 }
@@ -339,7 +339,7 @@ body.no-header-wrapper {
   padding-bottom: 15px;
 }
 .header .main-nav .nav .nav-item .nav-link:hover {
-  color: #71c4e0;
+  color: #fff;
   background: none;
 }
 .header .main-nav .nav .nav-item .nav-link:focus {
@@ -351,7 +351,7 @@ body.no-header-wrapper {
   background: none;
 }
 .header .main-nav .nav .nav-item.active {
-  color: #71c4e0;
+  color: #fff;
 }
 .header .main-nav .nav .nav-item.last {
   margin-right: 0;
@@ -477,7 +477,7 @@ body.no-header-wrapper {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 56px;
-  color: #71c4e0;
+  color: #e4500e;
 }
 .home-promo .title .bottom {
   font-family: 'Merriweather Sans', arial, sans-serif;
@@ -655,7 +655,7 @@ body.no-header-wrapper {
   color: #909cb0;
 }
 .latest-work .item .content .link a:hover {
-  color: #71c4e0;
+  color: #fff;
 }
 .latest-work .item .content .link .fa {
   color: #909cb0;
@@ -770,7 +770,7 @@ body.no-header-wrapper {
 }
 /* ======= cta-section ======= */
 .cta-section {
-  background: #65758e url('../images/background/cta-background.jpg') no-repeat left top;
+  background: #65758e url('../images/background/joshua-sorenson-1242547-unsplash.jpg') no-repeat left top;
   background-size: cover;
   min-height: 420px;
   color: #fff;
@@ -807,7 +807,7 @@ body.no-header-wrapper {
   color: #86cde5;
 }
 .cta-section .contact-info a:hover {
-  color: #71c4e0;
+  color: #fff;
 }
 /* ======= Latest blog posts ======= */
 .latest-blog {
@@ -866,7 +866,7 @@ body.no-header-wrapper {
   color: #65758e;
 }
 .latest-blog .item-inner .sub-title a:hover {
-  color: #71c4e0;
+  color: #fff;
 }
 .latest-blog .item-inner .content-wrapper {
   padding: 30px;
@@ -915,7 +915,7 @@ body.no-header-wrapper {
   color: #65758e;
 }
 .work-list .item .sub-title a:hover {
-  color: #71c4e0;
+  color: #fff;
 }
 .work-list .item .figure {
   position: relative;
@@ -945,7 +945,7 @@ body.no-header-wrapper {
   top: 0;
   left: 0;
   text-align: center;
-  background: rgba(48, 56, 67, 0.9);
+  background: #241d50;
 }
 .work-list .item .figure .info-mask span {
   display: block;
@@ -994,7 +994,7 @@ body.no-header-wrapper {
   color: #c6c6c6;
 }
 .breadcrumb .breadcrumb-item a:hover {
-  color: #71c4e0;
+  color: #fff;
 }
 .breadcrumb .breadcrumb-item.active {
   color: #c6c6c6;
@@ -1421,7 +1421,7 @@ body.no-header-wrapper {
   color: #999;
 }
 .blog-list .item .meta .meta-list li a:hover {
-  color: #71c4e0;
+  color: #fff;
 }
 .blog-list .item .meta .meta-list .post-time {
   font-size: 16px;
@@ -1559,13 +1559,13 @@ body.no-header-wrapper {
   color: #999;
 }
 .blog-post-wrapper .meta .post-author a:hover {
-  color: #71c4e0;
+  color: #fff;
 }
 .blog-post-wrapper .meta .post-comments-link a {
   color: #999;
 }
 .blog-post-wrapper .meta .post-comments-link a:hover {
-  color: #71c4e0;
+  color: #fff;
 }
 .blog-post-wrapper .meta .post-comments-link .fa {
   margin-right: 5px;
@@ -1617,7 +1617,7 @@ body.no-header-wrapper {
   color: #65758e;
 }
 .blog-post-wrapper .comment-area .comment-container .comment-item .comment-body .name a:hover {
-  color: #71c4e0;
+  color: #fff;
 }
 .blog-post-wrapper .comment-area .comment-container .comment-item .comment-body .time {
   color: #999;
@@ -1651,7 +1651,7 @@ body.no-header-wrapper {
   color: #65758e;
 }
 .blog-sidebar .widget a:hover {
-  color: #71c4e0;
+  color: #fff;
 }
 .blog-sidebar .widget .title {
   font-size: 20px;
@@ -1758,7 +1758,7 @@ body.no-header-wrapper {
 }
 .blog-entry .custom-list-style li .fa {
   margin-right: 5px;
-  color: #71c4e0;
+  color: #fff;
 }
 .blog-entry p {
   margin-bottom: 30px;
@@ -1788,7 +1788,7 @@ body.no-header-wrapper {
   line-height: 1.6;
 }
 .custom-quote .fa {
-  color: #71c4e0;
+  color: #fff;
   margin-right: 10px;
 }
 .custom-quote .source {
@@ -1991,7 +1991,7 @@ body.no-header-wrapper {
 }
 /* ======= Bootstrap Image Gallery ======== */
 .blueimp-gallery {
-  background: rgba(16, 19, 23, 0.9);
+  background: #241d50;
 }
 /* ======= Footer ======= */
 .footer .footer-content {
@@ -2005,7 +2005,7 @@ body.no-header-wrapper {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer .footer-content a:hover {
-  color: #71c4e0;
+  color: #fff;
 }
 .footer .footer-content .sub-title {
   color: rgba(255, 255, 255, 0.9);
@@ -2218,7 +2218,7 @@ body.no-header-wrapper {
   border: 2px solid rgba(0, 0, 0, 0.4);
 }
 .config-panel #color-options li.theme-1 a {
-  background: #71c4e0;
+  background: #fff;
 }
 .config-panel #color-options li.theme-2 a {
   background-color: #71e08b;
