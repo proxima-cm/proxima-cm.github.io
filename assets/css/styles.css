@@ -6,6 +6,103 @@
  * Twitter: @3rdwave_themes
 */
 /* ======= Base ======= */
+:root{
+
+  --hauteur-menu:10px;
+}
+nav{
+  color: white;
+  top:0px;
+  position:sticky;
+}
+nav ul{
+  list-style-type: none;
+}
+nav> ul> li{
+
+  position: relative;
+  height: 100%;
+  flex:1;
+}
+nav> ul> li> a{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  
+}
+
+.menu-deroulant> a{
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 100%;
+  
+}
+.menu-deroulant>a:hover{
+  background-color: #e4500e;
+}
+.menu-deroulant > a:after{
+  color: #fff;
+  content: ">";
+  font-size: 15px;
+  margin-left: 5px;
+  display: inline-block;
+  
+
+}
+.sous-menu{
+  margin-top: var(--hauteur-menu) ;
+  width: 100%;
+  text-align: left;
+ 
+  border-radius: 2px;
+  overflow: hidden;
+  max-height: 0;
+}
+nav > ul > li > a:hover{
+  background-color: #e4500e;
+  
+}
+.sous-menu > li:hover{
+
+  background-color: #e4500e;
+}
+@keyframes rotationFleche{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(90deg);
+  }
+}
+.menu-deroulant:hover > a:after{
+  animation: rotationFleche 0.2s linear forwards;
+}
+@keyframes apparitionSous-menu{
+
+  0%{
+      box-shadow: 0px  3px 3px 1px rgb(0, 0,0);
+      border-top: 3px solid orangered; 
+  }
+  30%{
+      box-shadow: 0px  3px 3px 1px rgb(0, 0,0.3);
+      
+  }
+  100%{
+      max-height: 50em;
+      border-top: 3px solid orangered; 
+      box-shadow: 0px  3px 3px 1px rgb(0, 0,0.3);
+  }
+}
+.menu-deroulant:hover>.sous-menu{
+  animation: apparitionSous-menu 1s forwards; 
+}
 body {
   font-family: 'Merriweather Sans', arial, sans-serif;
   color: #666;
@@ -340,7 +437,7 @@ body.no-header-wrapper {
 }
 .header .main-nav .nav .nav-item .nav-link:hover {
   color: #fff;
-  background: none;
+  background-color: #e4500e;
 }
 .header .main-nav .nav .nav-item .nav-link:focus {
   outline: none;
