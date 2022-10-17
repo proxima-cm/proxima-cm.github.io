@@ -443,7 +443,7 @@ body.no-header-wrapper {
 }
 .header .main-nav .nav .nav-item .nav-link:hover {
   color: #fff;
-  background-color: #e4500e;
+  background-color: none;
 }
 .header .main-nav .nav .nav-item .nav-link:focus {
   outline: none;
