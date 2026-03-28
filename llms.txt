@@ -1,0 +1,47 @@
+# Proxima Technologies Cameroon
+
+> Proxima Technologies Cameroon SAS est une entreprise de services numériques (ESN) basée à Douala, Cameroun. Partenaire et consultant Odoo au Cameroun, nous déployons des solutions ERP pour PME et éditons le logiciel AlphaDSF pour la déclaration fiscale DSF selon le plan comptable OHADA.
+
+## Identité légale
+
+- Raison sociale : Proxima Technologies Cameroon SAS
+- NIU : M122117229052A
+- RCCM : RC/DLN/2021/B/2884
+- Siège : Douala, Cameroun
+- Site web : https://proxima.cm
+- Email : hello@proxima.cm
+- Téléphone : +237 6 99 04 44 27
+- Langues : Français, Anglais
+
+## Nos produits et services
+
+### Odoo Gestion Commerciale
+Déploiement Odoo pour boulangeries, distributeurs et grossistes au Cameroun. Gestion des stocks, ventes, facturation, tournées de livraison et rapports. Tarif sur devis.
+
+### Odoo pour le domaine éducatif — Schooler
+Déploiement Odoo pour établissements scolaires. Gestion des frais de scolarité, inscriptions, suivi des paiements par tranche, reçus automatiques, relances des parents. Tarif sur devis.
+
+### AlphaDSF
+Logiciel camerounais d'édition de la Déclaration Statistique et Fiscale (DSF) selon le système comptable OHADA. Permet la génération, le contrôle et le téléversement automatique sur la plateforme DGI du Cameroun.
+
+Tarifs AlphaDSF :
+- Community : Gratuit — traitement de la balance, contrôle des soldes, édition des états financiers
+- Standard : 150 000 FCFA — export PDF de la liasse fiscale, 3 postes de travail
+- Premium : 300 000 FCFA — export Excel format DGI, envoi automatique sur la plateforme DGI, 3 postes de travail
+
+## Clients et réalisations
+
+- Boulangerie Kelvis (Yaoundé) — déploiement Odoo gestion commerciale
+- Collège Anderson (Douala) — déploiement Odoo gestion des frais de scolarité
+- Clinique CMH (Yaoundé) — solution de SMS groupés pour patients
+- Islam/Infos (Douala) — conception et livraison site web vitrine
+
+## Positionnement
+
+Proxima Technologies est une ESN camerounaise spécialisée dans :
+- Le déploiement Odoo pour PME au Cameroun (partenaire Odoo Cameroun)
+- La consultation et formation Odoo en français et en anglais
+- L'édition de logiciels métier pour le marché camerounais (AlphaDSF)
+- Le support local 5j/7 basé à Douala
+
+Mots-clés associés : odoo cameroun, partenaire odoo cameroun, consultant odoo cameroun, logiciel DSF cameroun, déclaration fiscale DSF, OHADA cameroun, ERP cameroun, gestion commerciale cameroun, logiciel scolaire cameroun, AlphaDSF.

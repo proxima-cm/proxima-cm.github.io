@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Partenaire Odoo Cameroun - Consultant Odoo &amp; Logiciel DSF OHADA | Proxima Technologies</title>
+  <meta name="description" content="Proxima Technologies, partenaire et consultant Odoo au Cameroun. Déployez Odoo pour votre commerce, distribution ou établissement scolaire. AlphaDSF : logiciel de déclaration fiscale DSF conforme au plan comptable OHADA.">
+  <meta name="keywords" content="odoo cameroun, partenaire odoo cameroun, consultant odoo cameroun, logiciel dsf cameroun, déclaration fiscale DSF, OHADA cameroun, ERP cameroun, gestion commerciale cameroun, logiciel scolaire cameroun, AlphaDSF">
+  <meta name="author" content="Proxima Technologies Cameroon SAS">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:locale"      content="fr_CM">
+  <meta property="og:title"       content="Partenaire Odoo Cameroun - Consultant Odoo &amp; Logiciel DSF OHADA | Proxima Technologies">
+  <meta property="og:description" content="Partenaire et consultant Odoo au Cameroun. Déployez Odoo pour votre commerce ou établissement scolaire. AlphaDSF : logiciel DSF conforme au plan comptable OHADA.">
+  <meta property="og:site_name"   content="Proxima Technologies">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link type="text/plain" rel="llms" href="llms.txt">
+
+  <!-- Structured data - Organisation -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Proxima Technologies Cameroon SAS",
+    "alternateName": "Proxima Technologies",
+    "url": "https://proxima.cm",
+    "logo": "https://proxima.cm/favicon.ico",
+    "description": "Partenaire et consultant Odoo au Cameroun. Déploiement Odoo pour PME, boulangeries, distributeurs et établissements scolaires. Éditeur du logiciel AlphaDSF pour la déclaration fiscale DSF selon le plan comptable OHADA.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Douala",
+      "addressCountry": "CM"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "{{ phone }}",
+      "email": "{{ email }}",
+      "contactType": "customer service",
+      "availableLanguage": "French"
+    },
+    "sameAs": [
+      "https://blog.proxima.cm"
+    ]
+  }
+  </script>
+
+  <!-- Structured data - Logiciel AlphaDSF -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "AlphaDSF",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Windows",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Community",
+        "price": "0",
+        "priceCurrency": "XAF"
+      },
+      {
+        "@type": "Offer",
+        "name": "Standard",
+        "price": "150000",
+        "priceCurrency": "XAF"
+      },
+      {
+        "@type": "Offer",
+        "name": "Premium",
+        "price": "300000",
+        "priceCurrency": "XAF"
+      }
+    ],
+    "description": "Logiciel d'édition de la Déclaration Statistique et Fiscale (DSF) selon le plan comptable OHADA. Génération et téléversement automatique sur la plateforme DGI du Cameroun.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Proxima Technologies Cameroon SAS"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<header id="site-header">
+  <div class="wrap header-inner">
+    <a href="#" class="logo">Proxima Technologies Cameroon</a>
+    <nav class="main-nav" id="main-nav">
+      <a href="#produits"     class="nav-link">Nos Solutions</a>
+      <a href="#realisations" class="nav-link">Nos Clients</a>
+      <a href="#alphadsf"     class="nav-link">AlphaDSF</a>
+      <a href="#contact"      class="nav-link">Contact</a>
+      <a href="{{ wa_header_url }}" class="nav-cta" target="_blank" rel="noopener">
+        {% include '_includes/wa_icon.html' %}
+        {{ wa_header_label }}
+      </a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+{% block content %}{% endblock %}
+
+<footer id="site-footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <span>© <a href="#">Proxima Technologies</a> 2018 - <script>document.write(new Date().getFullYear())</script></span>
+      <span class="footer-sep">|</span>
+      <a href="#produits">Produits</a>
+      <a href="#alphadsf">AlphaDSF</a>
+      <a href="#realisations">Réalisations</a>
+      <span class="footer-sep">|</span>
+      <a href="{{ wa_tel }}" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="{{ phone_url }}">{{ phone_display }}</a>
+      <a href="mailto:{{ email }}">{{ email }}</a>
+      <span class="footer-sep">|</span>
+      <span>Douala, Cameroun</span>
+    </div>
+    <div class="footer-legal">
+      Proxima Technologies Cameroon SAS - NIU&nbsp;: M122117229052A - RCCM&nbsp;: RC/DLN/2021/B/2884
+    </div>
+  </div>
+</footer>
+
+<a href="{{ wa_float_url }}" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  {% include '_includes/wa_icon.html' %}
+  <span class="wa-tip">{{ wa_float_tip }}</span>
+</a>
+
+<script>
+const hdr    = document.getElementById('site-header');
+  const burger = document.getElementById('burger');
+  const nav    = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => hdr.style.boxShadow = scrollY > 10 ? '0 1px 12px rgba(0,0,0,.07)' : '', {passive: true});
+  burger.addEventListener('click', () => { burger.classList.toggle('open'); nav.classList.toggle('open'); });
+  nav.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', () => { burger.classList.remove('open'); nav.classList.remove('open'); }));
+  document.querySelectorAll('.faq-q').forEach(q => q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!open) item.classList.add('open');
+  }));
+</script>
+{% block js %}{% endblock %}
+
+</body>
+</html>

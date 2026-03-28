@@ -1,108 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "base.html" %}
 
-  <title>Partenaire Odoo Cameroun - Consultant Odoo &amp; Logiciel DSF OHADA | Proxima Technologies</title>
-  <meta name="description" content="Proxima Technologies, partenaire et consultant Odoo au Cameroun. Déployez Odoo pour votre commerce, distribution ou établissement scolaire. AlphaDSF : logiciel de déclaration fiscale DSF conforme au plan comptable OHADA.">
-  <meta name="keywords" content="odoo cameroun, partenaire odoo cameroun, consultant odoo cameroun, logiciel dsf cameroun, déclaration fiscale DSF, OHADA cameroun, ERP cameroun, gestion commerciale cameroun, logiciel scolaire cameroun, AlphaDSF">
-  <meta name="author" content="Proxima Technologies Cameroon SAS">
-  <meta name="robots" content="index, follow">
-
-  <!-- Open Graph -->
-  <meta property="og:type"        content="website">
-  <meta property="og:locale"      content="fr_CM">
-  <meta property="og:title"       content="Partenaire Odoo Cameroun - Consultant Odoo &amp; Logiciel DSF OHADA | Proxima Technologies">
-  <meta property="og:description" content="Partenaire et consultant Odoo au Cameroun. Déployez Odoo pour votre commerce ou établissement scolaire. AlphaDSF : logiciel DSF conforme au plan comptable OHADA.">
-  <meta property="og:site_name"   content="Proxima Technologies">
-
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="static/css/style.css">
-  <link type="text/plain" rel="llms" href="llms.txt">
-
-  <!-- Structured data - Organisation -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Proxima Technologies Cameroon SAS",
-    "alternateName": "Proxima Technologies",
-    "url": "https://proxima.cm",
-    "logo": "https://proxima.cm/favicon.ico",
-    "description": "Partenaire et consultant Odoo au Cameroun. Déploiement Odoo pour PME, boulangeries, distributeurs et établissements scolaires. Éditeur du logiciel AlphaDSF pour la déclaration fiscale DSF selon le plan comptable OHADA.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Douala",
-      "addressCountry": "CM"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+237699044427",
-      "email": "hello@proxima.cm",
-      "contactType": "customer service",
-      "availableLanguage": "French"
-    },
-    "sameAs": [
-      "https://blog.proxima.cm"
-    ]
-  }
-  </script>
-
-  <!-- Structured data - Logiciel AlphaDSF -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "AlphaDSF",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Windows",
-    "offers": [
-      {
-        "@type": "Offer",
-        "name": "Community",
-        "price": "0",
-        "priceCurrency": "XAF"
-      },
-      {
-        "@type": "Offer",
-        "name": "Standard",
-        "price": "150000",
-        "priceCurrency": "XAF"
-      },
-      {
-        "@type": "Offer",
-        "name": "Premium",
-        "price": "300000",
-        "priceCurrency": "XAF"
-      }
-    ],
-    "description": "Logiciel d'édition de la Déclaration Statistique et Fiscale (DSF) selon le plan comptable OHADA. Génération et téléversement automatique sur la plateforme DGI du Cameroun.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Proxima Technologies Cameroon SAS"
-    }
-  }
-  </script>
-</head>
-<body>
-
-<header id="site-header">
-  <div class="wrap header-inner">
-    <a href="#" class="logo">Proxima Technologies Cameroon</a>
-    <nav class="main-nav" id="main-nav">
-      <a href="#produits"     class="nav-link">Nos Solutions</a>
-      <a href="#realisations" class="nav-link">Nos Clients</a>
-      <a href="#alphadsf"     class="nav-link">AlphaDSF</a>
-      <a href="#contact"      class="nav-link">Contact</a>
-      <a href="https://wa.me/237699044427?text=Bonjour%2C%20j%27aimerais%20avoir%20les%20services%20de%20Proxima%20Technologies" class="nav-cta" target="_blank" rel="noopener">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.539 4.061 1.485 5.782L.057 23.625a.75.75 0 0 0 .92.912l5.934-1.418A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.902 0-3.68-.513-5.2-1.408l-.374-.223-3.879.927.952-3.79-.244-.39A9.955 9.955 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>        WhatsApp
-      </a>
-    </nav>
-    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
-
+{% block content %}
 
 <!-- ─── HERO ──────────────────────────────────────────── -->
 <section id="hero">
@@ -112,7 +10,7 @@
       <h1>Partenaire Odoo au Cameroun — ERP, gestion scolaire &amp; logiciel DSF OHADA.</h1>
       <p>Proxima Technologies déploie Odoo pour les PME camerounaises : boulangeries, distributeurs, grossistes et établissements scolaires. Nous éditons aussi AlphaDSF, le logiciel de déclaration fiscale DSF conforme au plan comptable OHADA.</p>
       <div class="hero-btns">
-        <a href="https://wa.me/237699044427?text=Bonjour%2C%20j%27aimerais%20avoir%20les%20services%20de%20Proxima%20Technologies" class="btn btn-brand" target="_blank" rel="noopener">Écrivez-nous sur WhatsApp</a>
+        <a href="{{ wa_hero }}" class="btn btn-brand" target="_blank" rel="noopener">{{ wa_hero_label }}</a>
         <a href="#produits" class="btn btn-outline">Nos produits</a>
       </div>
       <div class="hero-metrics">
@@ -155,7 +53,7 @@
           <li>Achats &amp; fournisseurs</li>
           <li>Tableaux de bord &amp; rapports</li>
         </ul>
-        <a href="https://wa.me/237699044427?text=Bonjour%2C%20j%27aimerais%20impl%C3%A9menter%20Odoo%20pour%20ma%20gestion%20commerciale" class="btn btn-brand" target="_blank" rel="noopener">Demander une démo</a>
+        <a href="{{ wa_commerce }}" class="btn btn-brand" target="_blank" rel="noopener">{{ wa_commerce_label }}</a>
       </div>
 
       <div class="product-card">
@@ -170,7 +68,7 @@
           <li>Relances automatiques des parents</li>
           <li>Rapports financiers pour la direction</li>
         </ul>
-        <a href="https://wa.me/237699044427?text=Bonjour%2C%20j%27aimerais%20avoir%20votre%20logiciel%20de%20gestion%20des%20frais%20de%20scolarit%C3%A9" class="btn btn-brand" target="_blank" rel="noopener">Demander une démo</a>
+        <a href="{{ wa_education }}" class="btn btn-brand" target="_blank" rel="noopener">{{ wa_education_label }}</a>
       </div>
 
       <div class="product-card">
@@ -211,7 +109,7 @@
           <li>Contrôle des reports</li>
           <li>Édition des états financiers &amp; fiscaux</li>
         </ul>
-        <a href="https://wa.me/237699044427?text=Bonjour%2C%20pouvez-vous%20m%27envoyer%20une%20version%20gratuite%20de%20AlphaDSF%20%3F" class="btn btn-outline" style="width:100%;justify-content:center" target="_blank" rel="noopener">Commander</a>
+        <a href="{{ wa_alphadsf_community }}" class="btn btn-outline" style="width:100%;justify-content:center" target="_blank" rel="noopener">{{ wa_alphadsf_community_label }}</a>
       </div>
       <div class="pricing-col">
         <div class="pricing-name">Standard</div>
@@ -222,7 +120,7 @@
           <li>Export de la liasse en PDF</li>
           <li>Liasse fiscale intégrée</li>
         </ul>
-        <a href="https://wa.me/237699044427?text=Bonjour%2C%20je%20veux%20AlphaDSF%20Standard%20%C3%A0%20150%20000%20FCFA" class="btn btn-brand" style="width:100%;justify-content:center" target="_blank" rel="noopener">Commander</a>
+        <a href="{{ wa_alphadsf_standard }}" class="btn btn-brand" style="width:100%;justify-content:center" target="_blank" rel="noopener">{{ wa_alphadsf_standard_label }}</a>
       </div>
       <div class="pricing-col featured">
         <div class="pricing-name">Premium</div>
@@ -233,7 +131,7 @@
           <li>Export Excel format DGI</li>
           <li>Envoi automatique sur la plateforme DGI</li>
         </ul>
-        <a href="https://wa.me/237699044427?text=Bonjour%2C%20je%20veux%20AlphaDSF%20Premium%20%C3%A0%20300%20000%20FCFA" class="btn btn-wa" style="width:100%;justify-content:center" target="_blank" rel="noopener">Commander</a>
+        <a href="{{ wa_alphadsf_premium }}" class="btn btn-wa" style="width:100%;justify-content:center" target="_blank" rel="noopener">{{ wa_alphadsf_premium_label }}</a>
       </div>
     </div>
     <p style="font-size:12px;color:#888;margin-top:12px;text-align:center">Licence par installation. Pour plusieurs postes ou cabinets multi-clients, contactez-nous pour un tarif adapté.</p>
@@ -394,53 +292,16 @@
     <h2>Prêt à digitaliser votre entreprise ?</h2>
     <p>La démo est gratuite et sans engagement. On s'adapte à votre agenda.</p>
     <div class="cta-band-btns">
-      <a href="https://wa.me/237699044427?text=Bonjour%2C%20j%27aimerais%20avoir%20les%20services%20de%20Proxima%20Technologies" class="btn btn-wa" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
-      <a href="tel:+237699044427" class="btn" style="background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.2)">+237 6 99 04 44 27</a>
-      <a href="mailto:hello@proxima.cm" class="btn" style="background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.2)">hello@proxima.cm</a>
+      <a href="{{ wa_cta }}" class="btn btn-wa" target="_blank" rel="noopener">{{ wa_cta_label }}</a>
+      <a href="{{ phone_url }}" class="btn" style="background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.2)">{{ phone_display }}</a>
+      <a href="mailto:{{ email }}" class="btn" style="background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.2)">{{ email }}</a>
     </div>
   </div>
 </section>
 
+{% endblock %}
 
-<footer id="site-footer">
-  <div class="wrap">
-    <div class="footer-inner">
-      <span>© <a href="#">Proxima Technologies</a> 2018 - <script>document.write(new Date().getFullYear())</script></span>
-      <span class="footer-sep">|</span>
-      <a href="#produits">Produits</a>
-      <a href="#alphadsf">AlphaDSF</a>
-      <a href="#realisations">Réalisations</a>
-      <span class="footer-sep">|</span>
-      <a href="https://wa.me/237699044427" target="_blank" rel="noopener">WhatsApp</a>
-      <a href="tel:+237699044427">+237 6 99 04 44 27</a>
-      <a href="mailto:hello@proxima.cm">hello@proxima.cm</a>
-      <span class="footer-sep">|</span>
-      <span>Douala, Cameroun</span>
-    </div>
-    <div class="footer-legal">
-      Proxima Technologies Cameroon SAS - NIU&nbsp;: M122117229052A - RCCM&nbsp;: RC/DLN/2021/B/2884
-    </div>
-  </div>
-</footer>
-
-<a href="https://wa.me/237699044427?text=Bonjour%2C%20j%27aimerais%20avoir%20les%20services%20de%20Proxima%20Technologies" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.539 4.061 1.485 5.782L.057 23.625a.75.75 0 0 0 .92.912l5.934-1.418A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.902 0-3.68-.513-5.2-1.408l-.374-.223-3.879.927.952-3.79-.244-.39A9.955 9.955 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>  <span class="wa-tip">Écrivez-nous !</span>
-</a>
-
-<script>
-const hdr    = document.getElementById('site-header');
-  const burger = document.getElementById('burger');
-  const nav    = document.getElementById('main-nav');
-  window.addEventListener('scroll', () => hdr.style.boxShadow = scrollY > 10 ? '0 1px 12px rgba(0,0,0,.07)' : '', {passive: true});
-  burger.addEventListener('click', () => { burger.classList.toggle('open'); nav.classList.toggle('open'); });
-  nav.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', () => { burger.classList.remove('open'); nav.classList.remove('open'); }));
-  document.querySelectorAll('.faq-q').forEach(q => q.addEventListener('click', () => {
-    const item = q.parentElement;
-    const open = item.classList.contains('open');
-    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-    if (!open) item.classList.add('open');
-  }));
-</script>
+{% block js %}
 <script>
   const io = new IntersectionObserver(entries => entries.forEach(e => {
     if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'none'; io.unobserve(e.target); }
@@ -450,6 +311,4 @@ const hdr    = document.getElementById('site-header');
     io.observe(el);
   });
 </script>
-
-</body>
-</html>
+{% endblock %}
